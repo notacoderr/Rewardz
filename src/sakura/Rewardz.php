@@ -23,7 +23,7 @@ class Rewardz extends PluginBase implements Listener {
 
     public $config;
 
-    public $economyAPI;
+    public $economyAPI, $coreX;
 
     public function onEnable() {
         if(!is_dir($this->getDataFolder())) {
@@ -60,8 +60,8 @@ class Rewardz extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $player->sendMessage((string) $this->config["SW_message"]);
         $this->economyAPI->addMoney($player, (int)$this->config["SW_reward"]);
-        $this->core->calculate->doMagic($player, (int)$this->config["SW_Exp"]); //Exp
-        $this->core->elo->increasePoints($player, (int) $this->config["SW_Elo"]); //Elo points
+        $this->coreX->calculate->doMagic($player, (int)$this->config["SW_Exp"]); //Exp
+        $this->coreX->elo->increasePoints($player, (int) $this->config["SW_Elo"]); //Elo points
     }
     
     /**
@@ -71,7 +71,7 @@ class Rewardz extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $player->sendMessage((string) $this->config["1_message"]);
         $this->economyAPI->addMoney($player, (int)$this->config["1_reward"]); //Cash
-        $this->core->calculate->doMagic($player, (int)$this->config["1_Exp"]); //Exp
-        $this->core->elo->increasePoints($player, (int) $this->config["1_Elo"]); //Elo points
+        $this->coreX->calculate->doMagic($player, (int)$this->config["1_Exp"]); //Exp
+        $this->coreX->elo->increasePoints($player, (int) $this->config["1_Elo"]); //Elo points
     }
 }
