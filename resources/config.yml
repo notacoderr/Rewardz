@@ -1,7 +1,17 @@
 ---
 # Money reward
-reward: 100
+SW_reward: 100
+1_reward: 100
+
+# Exp reward
+SW_Exp: 34
+1_Exp: 21
+
+# Elo points reward
+SW_Elo: 10
+1_Elo: 6
 
 # Displayed message
-message: 'You won $100!'
+SW_message: '§l§7[§a>§7] §fEarned $100, 34 Exp, 10 Elo pts'
+1_message: '§l§7[§a>§7] §fEarned $120, 21 Exp, 6 Elo pts'
 ...
