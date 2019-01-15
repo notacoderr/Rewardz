@@ -1,8 +1,8 @@
-name: SkyWars-Reward
-api: 3.0.0
-main: skywars\SWReward
-author: VixikHD
-description: Money reward for SkyWars plugin
-version: 1.1.0
-website: https://github.com/GamakCZ/SkyWars
-depend: [SkyWars, EconomyAPI]
+name: RewardZ
+api: [3.0.0, 3.5.0, 3.4.0]
+main: sakura\Rewarz
+author: Codeeeh
+description: Rewards for GamakCZ OneVsOne and SkyWars plugin
+version: 0.1.0
+website: https://github.com/GamakCZ
+depend: [SkyWars, EconomyAPI, OneVsOne, CoreX2]
