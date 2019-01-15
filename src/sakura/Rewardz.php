@@ -12,7 +12,10 @@ use pocketmine\plugin\PluginException;
 
 use onebone\economyapi\EconomyAPI;
 
-use skywars\event\PlayerArenaWinEvent as SWEvent;
+use vixikhd\skywars\SkyWars;
+use vixikhd\onevsone\OneVsOne;
+
+use vixikhd\skywars\event\PlayerArenaWinEvent as SWEvent;
 use vixikhd\onevsone\event\PlayerArenaWinEvent as OneEvent;
 
 
