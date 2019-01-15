@@ -1,6 +1,6 @@
 name: RewardZ
 api: [3.0.0, 3.5.0, 3.4.0]
-main: sakura\Rewarz
+main: sakura\Rewardz
 author: Codeeeh
 description: Rewards for GamakCZ OneVsOne and SkyWars plugin
 version: 0.1.0
