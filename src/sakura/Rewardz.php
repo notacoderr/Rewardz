@@ -53,7 +53,7 @@ class Rewardz extends PluginBase implements Listener {
     /**
      * @param PlayerArenaWinEvent [SW] $event
      */
-    function onWin(SWEvent $event) : void {
+    function onWinSW(SWEvent $event) : void {
         $player = $event->getPlayer();
         $player->sendMessage((string) $this->config["SW_message"]);
         $this->economyAPI->addMoney($player, (int)$this->config["SW_reward"]);
@@ -64,7 +64,7 @@ class Rewardz extends PluginBase implements Listener {
     /**
      * @param PlayerArenaWinEvent [OneVsOne] $event
      */
-    function onWin(OneEvent $event) : void {
+    function onWinOneVsOne(OneEvent $event) : void {
         $player = $event->getPlayer();
         $player->sendMessage((string) $this->config["1_message"]);
         $this->economyAPI->addMoney($player, (int)$this->config["1_reward"]); //Cash
